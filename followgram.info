@@ -1,1 +1,13 @@
 name = Followgram
+description = "Share your Instagram pictures via Followgram"
+
+; Core version
+core = 7.x
+
+; Loadable code files
+files[] = followgram.module
+
+; Module dependencies
+
+; Configuration page
+configure = admin/config/followgram

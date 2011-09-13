@@ -1,0 +1,76 @@
+<?php
+/**
+ * @file
+ * This is the file description for Followgram module.
+ * 
+ */
+
+/**
+ * Implements hook_permission().
+ */
+//function followgram_permission() {
+//  return array(
+//    'administer followgram' => array(
+//      'title' => t('Administer Followgram'),
+//      'description' => t('Manage Followgram settings.'),
+//    ),
+//  );
+//}
+
+/**
+ * Implements hook_menu().
+ */
+//function followgram_menu() {
+//  $items = array();
+//
+//  $items['admin/config/followgram'] = array(
+//    'title' => 'Followgram settings',
+//    'description' => 'Configure Followgram setings',
+//    'page callback' => 'drupal_get_form',
+//    'page arguments' => array('admin_config_followgram'),
+//    'access arguments' => array('administer followgram'),
+//  );
+//
+//  return $items;
+//}
+
+
+  
+//function admin_config_followgram() {
+//  
+//  $form = array();
+//  
+//  $form['followgram'] = array(
+//    '#type' => 'markup',
+//    '#value' => 'Followgram Settings goes here.'
+//  );  
+//  
+//  
+//  $url = "http://followgram.me/migueltrindade/rss";
+//  $s = drupal_http_request($url);
+//  krumo($s);
+//  preg_match_all('#<item>(.*)</item>#Us', $s->data, $items);
+//  
+//    $ar = array();
+//    for($i=0;$i<count($items[1]);$i++) {
+//        $item = $items[1][$i];
+//        preg_match_all('#<link>(.*)</link>#Us', $item, $temp);
+//        $link = $temp[1][0];
+//        preg_match_all('#<pubDate>(.*)</pubDate>#Us', $item, $temp);
+//        $date = date("d-m-Y H:i:s",strtotime($temp[1][0]));
+//        preg_match_all('#<title>(.*)</title>#Us', $item, $temp);
+//        $title = $temp[1][0];
+//        preg_match_all('#<img src="([^>]*)">#Us', $item, $temp);
+//        $thumb = $temp[1][0];
+//        $ar['date'][$i] = $date;
+//        $ar['image'][$i] = str_replace("_5.jpg","_6.jpg",$thumb);
+//        $ar['bigimage'][$i] = str_replace("_5.jpg","_7.jpg",$thumb);
+//        $ar['link'][$i] = $link;
+//        $ar['title'][$i] = $title;
+//    }
+//    krumo($ar);
+//  return $form;
+//  
+//  
+//}
+
